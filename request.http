@@ -1,0 +1,42 @@
+###
+POST http://localhost:9000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"baletas",
+    "brand":"asdasds",
+    "price":67,
+    "inStock":true
+}
+
+
+
+//obtiene todos los productos
+
+###
+GET http://localhost:9000/api/products HTTP/1.1
+
+
+//obtiene solo un producto
+
+###
+GET http://localhost:9000/api/products/65355e932883079cb09bf96c HTTP/1.1
+
+//actualizar algun producto
+
+###
+PUT http://localhost:9000/api/products/65368bb84f078f4a4e8ac2e1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"tenis en bota",
+    "brand":"jordan",
+    "price":80,
+    "inStock":true
+}
+
+
+//eliminar algun producto
+
+###
+DELETE http://localhost:9000/api/products/65354fb6a5613c37c5bdbcc6 HTTP/1.1
